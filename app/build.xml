@@ -1,5 +1,0 @@
-<project name="employee">
-<target name="emp">
-<echo "Enter employee name />
-</target>
-</project>
