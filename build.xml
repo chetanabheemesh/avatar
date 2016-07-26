@@ -1,4 +1,9 @@
 <project name="Apps" default="war">
+<target name="depoly" depends="war">
+	<exec dir="." executable="bash">
+		<arg line="deploy.sh"></arg>
+	</exec>
+</target>
 <target name="war" depends="jar">
 <mkdir dir="war"/>
 	<war destfile="war/myapp.war" webxml="jar/myapp.jar"/>
@@ -13,6 +18,7 @@
 <mkdir dir="classes"/>
 <javac srcdir="src" destdir="classes"/>
 </target>
+
 <target name="clean">
 <delete dir="classes"/>
 <delete dir="jar"/>
