@@ -6,7 +6,7 @@
 
 <target name="jar" depends="compile">
 <mkdir dir="jar"/>
-         <jar basedir="classes/Helloworld.class" destfile="jar/myapp.jar" excludes="*.java"/>
+         <jar basedir="classes" destfile="jar/myapp.jar" excludes="*.java"/>
 </target>
 
 <target name="compile">
