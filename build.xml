@@ -1,7 +1,7 @@
 <project name="Apps" default="deploy">
 <target name="deploy" depends="war">
 	<exec dir="." executable="bash">
-		<arg line="deploy.sh"></arg>
+		<arg line="deploy.sh QA"></arg>
 	</exec>
 </target>
 <target name="war" depends="jar">
