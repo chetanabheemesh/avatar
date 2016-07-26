@@ -15,22 +15,13 @@ if [ "$1" == "QA" ]
 then
 	echo "Deploying the War file to $1 Environment"
 	echo "Deploying in Progress..... "
-<<<<<<< Updated upstream
-	cp war/myapp.war /home/user/servers/QA_server
-=======
-#	cp war/myapp.war ../../servers/QA_server/
 	cp war/myapp.war /home/user/servers/QA_server/
->>>>>>> Stashed changes
 	sleep 2
 	echo "Deployment done"
 elif [ "$1" == "PROD" ]
 then
 	echo "Deploying the War file to $1 Environment"
 	echo "Deploying in Progress..... "
-<<<<<<< Updated upstream
-=======
-	#cp war/myapp.war ../../servers/PROD/
->>>>>>> Stashed changes
 	cp war/myapp.war /home/user/servers/PROD
 	sleep 2
 	echo "Deployment done"
