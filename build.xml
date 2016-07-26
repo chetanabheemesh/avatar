@@ -1,5 +1,5 @@
-<project name="Apps" default="war">
-<target name="depoly" depends="war">
+<project name="Apps" default="deploy">
+<target name="deploy" depends="war">
 	<exec dir="." executable="bash">
 		<arg line="deploy.sh"></arg>
 	</exec>
