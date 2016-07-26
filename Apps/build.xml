@@ -1,0 +1,25 @@
+<project name="Apps" default="war">
+<target name="war" depends="jar">
+<mkdir dir="war"/>
+	<war destfile="war/myapp.war" webxml="classes/Helloworld.class"/>
+</target>
+
+<target name="jar" depends="compile">
+<mkdir dir="jar"/>
+         <jar basedir="/home/user/Git_Repo/Apps/classes/" destfile="jar/myapp.jar" excludes="*.java"/>
+</target>
+
+<target name="compile">
+<mkdir dir="classes"/>
+<javac srcdir="src" destdir="classes"/>
+</target>
+<target name="clean">
+<delete dir="classes"/>
+<delete dir="jar"/>
+<delete dir="war"/>
+</target>
+</project>
+
+
+
+
