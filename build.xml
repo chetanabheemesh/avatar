@@ -6,7 +6,7 @@
 
 <target name="jar" depends="compile">
 <mkdir dir="jar"/>
-         <jar basedir="/home/user/Git_Repo/classes/" destfile="jar/myapp.jar" excludes="*.java"/>
+         <jar basedir="classes/*.class" destfile="jar/myapp.jar" excludes="*.java"/>
 </target>
 
 <target name="compile">
